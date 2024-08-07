@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio website</title>
+    <link rel="stylesheet" href="/Css/index.css">
+</head>
+
+<body>
+
+    <!-- header/navbar -->
+    <header class="header">
+        <section>
+            <nav class="navbar">
+                <img src="/image/Logo-RevoU-5.png" class="logo" alt="">
+                <div>
+                    <a href="#" class="menu">Home</a>
+                    <a href="/profile.html" class="menu">Our profile</a>
+                    <a href="/about.html" class="menu">About</a>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <!-- contain -->
+    <main>
+        <div>
+            <section class="container">
+                <div id="bener">
+                    <h1>Hi <span id="bener-nama"></span>, Wecome To Website</h1>
+                    <p>Latihan belajar pemograman</p>
+                    <img class="bener-img"
+                        src="/image/cropped-cropped-KELAS-MTS-1-768x256.jpg"
+                        alt="">
+                    <img class="bener-img"
+                        src="/image/maxresdefault.jpg"
+                        alt="">
+                    <img class="bener-img"
+                        src="/image/2Undaan.jpg"
+                        alt="">
+                    <button class="bener-btn-priv" onclick="plusDivs(-1)">Preview</button>
+                    <button class="bener-btn-next" onclick="plusDivs(1)">Next</button>
+                </div>
+            </section>
+            <p class="hr"></p>
+            <section id="mainFacil">
+                <h1>Extracurricular & facilitation</h1>
+
+                <div id="facil">
+                    <div>
+                        <img class="facil-img"
+                            src="/image/WhatsApp Image 2023-04-18 at 14.17.57.jpg"
+                            alt="">
+                        <p class="facil-paragraf">Drumband</p>
+                    </div>
+                    <div>
+                        <img class="facil-img"
+                            src="/image/IMG_2449-640x381.jpg"
+                            alt="">
+                        <p class="facil-paragraf">Pramuka</p>
+                    </div>
+                    <div>
+                        <img class="facil-img"
+                            src="/image/0Undaan.jpg"
+                            alt="">
+                        <p class="facil-paragraf">Pondok Pesantren</p>
+                    </div>
+                </div>
+            </section>
+            <p class="hr"></p>
+            <section id="messageUse">
+                <h1>Message Use</h1>
+                <form name="message-form" onsubmit="return validateForm()" method="post" action="">
+                    <table>
+                        <tr>
+                            <td>Nama </td>
+                            <td>
+                                <input placeholder="name" type="text" name="full-name" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Tanggal Lahir </td>
+                            <td>
+                                <input type="date" name="birth-date" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Jenis Kelamin </td>
+                            <td>
+                                <input type="radio" name="gender" id="male" value="Laki-Laki" required>
+                                <label for="male">Laki-Laki</label>
+                                <input type="radio" name="gender" id="female" value="Perempuan" required>
+                                <label for="female">Perempuan</label>
+                                <input type="radio" id="non-binary" name="gender" value="Non-binary" required>
+                                <label for="non-binary">Non-binary</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Pesan </td>
+                            <td>
+                                <textarea placeholder=" pesan" name="message" id="" cols="30" rows="10"
+                                    required></textarea>
+                            <td>    
+                        </tr>   
+                        <tr>
+                            <td></td>
+                            <td>  
+                                <input type="submit" value="Submit">
+                            </td>
+                        </tr>                   
+                    </table>
+                </form>
+
+                <div>
+                    <p>Nama : <span id="sd-full-name"></span></p>
+                    <p>Tanggal Lahir : <span id="sd-birth-date"></span></p>
+                    <p>Jenis Kelamin : <span id="sd-gender"></span></p>
+                    <p>Pesan : <span id="sd-messages"></span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <p class="hr"></p>
+    <!-- footer -->
+    <footer>
+        <h6 class="h6">Created By Indra</h6>
+    </footer>
+    <!-- my js -->
+    <script a src="/Js/myjs.js"></script>
+</body>
+
+</html>
